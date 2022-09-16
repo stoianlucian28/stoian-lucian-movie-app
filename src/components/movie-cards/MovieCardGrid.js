@@ -61,7 +61,7 @@ const MovieCardGrid = ({movie, className, categoryType, onSetFavoriteMovie, onSe
     
                     <p className="text release-text">Release date:</p>
     
-                    <p className="text release-date">({moment(movie.releaseDate).format("DD MMM YYYY") || 'n/a'})</p>
+                    <p className="text release-date">({moment(movie.release_date).format("DD MMM YYYY") || 'n/a'})</p>
     
                     <Icon 
                         className = "favorite-movie-icon"
@@ -96,7 +96,7 @@ const MovieCardGrid = ({movie, className, categoryType, onSetFavoriteMovie, onSe
     
                     <p className="text release-text">Release date:</p>
 
-                    <p className="text release-date">({moment(movie.releaseDate).format("DD MMM YYYY") || 'n/a'})</p>
+                    <p className="text release-date">({moment(movie.release_date).format("DD MMM YYYY") || 'n/a'})</p>
                     
                 </div>
 

@@ -114,6 +114,8 @@ export default class HomePage extends React.Component{
 
         const [ popularMoviesRes, topRatedMoviesRes, upComingMoviesRes ] = 
                                         await Promise.all( [_popularMoviesListRes, _topRatedMoviesRes, _upcomingMoviesRes] );
+
+                                        console.log("popula moviers => ", popularMoviesRes.data);
         
         const moviesResObject = {
 
