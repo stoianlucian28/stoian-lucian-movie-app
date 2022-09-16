@@ -86,6 +86,9 @@ export default class HomePage extends React.Component{
             }
             else{
 
+
+                console.log("search comp", this.props.searchText)
+
                 this.setState({
 
                     isLoading: true,
@@ -95,7 +98,7 @@ export default class HomePage extends React.Component{
 
                         setTimeout( async () => {
 
-                            await this.onSetSearchedMovies()
+                            await this.onSetMovies()
                         }, 1000)
                     }
                 );
