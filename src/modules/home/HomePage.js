@@ -140,6 +140,8 @@ export default class HomePage extends React.Component{
                 }
             }
         };
+
+        console.log("ayaya", stateObject)
         
         this.onSetMovieState(stateObject, moviesRes, 'There was an error getting the movies list.');
     }
@@ -147,10 +149,14 @@ export default class HomePage extends React.Component{
     onGetFavoriteMovies = () => {
 
         const favMoviesFromLsJson = JSON.parse(localStorage.getItem("favoriteMovies"));
-        let favoriteMovies = [];
+        let favoriteMovies = {
+
+            results: []
+        };
 
         if(favMoviesFromLsJson && favMoviesFromLsJson !== null){
 
+            console.log("ajunge aici?", favMoviesFromLsJson)
             favoriteMovies = favMoviesFromLsJson;
         }
 
@@ -544,6 +550,8 @@ export default class HomePage extends React.Component{
         //     );
         // }
 
+        console.log("ayaya", this.state.movies.favorite.results)
+
         return(
 
             <div className="homepage-wrapper">
@@ -634,6 +642,7 @@ export default class HomePage extends React.Component{
                                             movie = {movie}
                                             categoryType = {"favorite-movies"}
                                             onSelectMovie = {this.onSelectMovie}
+                                            viewType = {this.state.viewType}
                                         />
                                     );
                                 }) 
