@@ -1,0 +1,65 @@
+
+.more-movies-wrapper{
+
+    margin-top: 10px;
+    width: 100%;
+}
+
+.more-movies-wrapper .more-movies-title-wrapper{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.more-movies-wrapper .more-movies-title-wrapper .more-movies-title{
+
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.more-movies-wrapper .more-movies-title-wrapper .more-movies-action{
+
+    margin-left: 20px;
+    font-size: 18px;
+    color: #31cbe0;
+    transition: .3s ease-out;
+}
+
+.load-more-btn-wrapper{
+
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.load-more-btn-wrapper .load-more-btn{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 24px;
+    color: #1f1f1f;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) {
+    
+
+}
+
+@media (min-width: 800px) {
+  
+
+}
+
+@media (min-width: 1280px) {
+
+    .more-movies-wrapper .more-movies-title-wrapper .more-movies-action:hover{
+
+        transform: scale(1.2);
+    }
+}

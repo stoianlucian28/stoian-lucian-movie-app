@@ -1,0 +1,84 @@
+/*
+/////////////////////////////////////////
+
+            Buttons Styling
+
+/////////////////////////////////////////
+*/
+
+.buttons-wrapper{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 49%;
+}
+
+/* Change Grid Container */
+.buttons-wrapper:nth-child(2){
+
+    justify-content: flex-end;
+}
+
+/*
+/////////////////////////////////////////
+
+      Change View Buttons Styling
+
+////////////////////////////////////////
+*/
+
+.change-view-button{
+
+    font-size: 20px;
+    color: #c4c4c4;
+    cursor: pointer;
+}
+
+.change-view-button.selected{
+
+    color: #fff;
+}
+
+
+/* List Icon */
+.change-view-button:nth-child(2){
+
+    margin-left: 12px;
+    font-size: 24px;
+}
+
+/*
+/////////////////////////////////////////
+
+      Change Category Buttons Styling
+
+////////////////////////////////////////
+*/
+
+.change-category-button{
+
+    min-width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: #c4c4c4;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4d4d4d;
+    cursor: pointer;
+}
+
+.change-category-button.selected{
+
+    background-color: #fff;
+}
+
+.change-category-button:nth-child(1){
+
+    border-radius: 8px 0px 0px 8px;
+}
+
+.change-category-button:nth-child(2){
+
+    border-radius: 0px 8px 8px 0px;
+}

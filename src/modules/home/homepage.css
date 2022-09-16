@@ -1,0 +1,299 @@
+/*
+////////////////////////////
+
+      HOMEPAGE STYLING
+
+///////////////////////////
+*/
+
+.homepage-wrapper{
+
+    margin: 0 auto; 
+}
+
+
+/*
+    For Change View and Change Category Buttons.
+*/
+.homepage-buttons-wrapper{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.missing-tx{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+}
+
+@media (min-width: 300px) {
+    
+    .homepage-wrapper{
+
+        padding: 10px;
+    }
+}
+
+@media (min-width: 800px) {
+  
+    .homepage-wrapper{
+
+        width: 80%;
+    }
+}
+
+@media (min-width: 1280px) {
+  
+    .homepage-wrapper{
+
+        width: 75%;
+    }
+}
+
+/*
+/////////////////////////////////
+
+        GRID VIEW STYLING
+
+/////////////////////////////////
+*/
+
+.movie-grid-view-wrapper{
+
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 300px) {
+    
+    .movie-grid-view-wrapper{
+
+        grid-template-columns: repeat(2, 48.5%);
+        gap: 10px;
+    }
+}
+
+@media (min-width: 800px) {
+  
+    .movie-grid-view-wrapper{
+
+        justify-content: flex-start;
+        grid-template-columns: repeat(auto-fit, 150px);
+        gap: 15px;
+    }
+}
+
+@media (min-width: 1280px) {
+  
+    .movie-grid-view-wrapper{
+
+        justify-content: flex-start;
+        grid-template-columns: repeat(auto-fit, 180px);
+        gap: 20px;
+    }
+}
+
+/*
+/////////////////////////////////
+
+        LIST VIEW STYLING
+
+/////////////////////////////////
+*/
+
+.movie-grid-view-wrapper{
+
+    margin-top: 10px;
+    width: 100%;
+}
+
+/*
+/////////////////////////////////
+
+       Selected movie
+
+////////////////////////////////
+*/
+
+
+.selected-movie-wrapper{
+    
+    width: 100%;
+}
+
+.selected-movie-wrapper .movie-title-wrapper{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.selected-movie-wrapper .movie-title-wrapper .movie-title{
+
+    width: 80%;
+    font-size: 24px;
+}
+
+.selected-movie-wrapper .movie-title-wrapper .favorite-movie-icon{
+
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.selected-movie-wrapper .movie-video{
+
+    margin-top: 10px;
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+.selected-movie-wrapper .movie-info-wrapper{
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.selected-movie-wrapper .movie-info-wrapper .general-info{
+
+    width: 100%;
+}
+
+.selected-movie-wrapper .movie-info-wrapper .general-info .header{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected-movie-wrapper .movie-info-wrapper .general-info .overview{
+
+    margin-top: 14px;
+    width: 100%;
+}
+
+.selected-movie-wrapper .movie-info-wrapper .general-info .overview .tagline{
+
+    font-size: 20px;
+    color: #c4c4c4;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.selected-movie-wrapper .movie-info-wrapper .general-info .overview .overview-tx{
+
+    margin-top: 10px;
+}
+
+.selected-movie-wrapper .movie-info-wrapper .general-info .general-info-tx{
+
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.selected-movie-wrapper .movie-info-wrapper .additional-info{
+    
+    margin-top: 20px;
+    width: 100%;
+}
+
+.selected-movie-wrapper .movie-info-wrapper .additional-info .cast,
+.selected-movie-wrapper .movie-info-wrapper .additional-info .genres
+{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.selected-movie-wrapper .movie-info-wrapper .additional-info .genres{
+
+    margin-top: 14px;
+}
+
+.selected-movie-wrapper .movie-info-wrapper .additional-info .label{
+
+    color: #c4c4c4;
+}
+
+.selected-movie-wrapper .similar-movies-wrapper{
+    
+    width: 100%;
+    margin-top: 20px;
+}
+
+.selected-movie-wrapper .similar-movies-wrapper .title{
+
+    font-size: 20px;
+    color: #c4c4c4;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (min-width: 300px) {
+    
+    .selected-movie-wrapper .movie-info-wrapper{
+
+        flex-direction: column;
+    }
+    
+}
+
+@media (min-width: 800px) {
+  
+    .selected-movie-wrapper .movie-info-wrapper{
+
+        flex-direction: row;
+    }
+
+    .selected-movie-wrapper .movie-info-wrapper .general-info{
+
+        width: 48%;
+    }
+
+    .selected-movie-wrapper .movie-info-wrapper .general-info .header{
+
+        justify-content: flex-start;
+    }
+
+    .selected-movie-wrapper .movie-info-wrapper .additional-info{
+    
+        width: 48%;
+    }
+}
+
+@media (min-width: 1280px) {
+
+}
+
+/*
+/////////////////////////////////
+
+       ERROR STYLING
+
+////////////////////////////////
+*/
+
+.error-title{
+
+    font-size: 20px;
+    font-weight: 700;
+    color: #c4c4c4;
+}
+
+.error-tx{
+
+    margin-top: 20px;
+}
